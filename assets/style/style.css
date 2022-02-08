@@ -144,7 +144,6 @@ body {
     background-image: linear-gradient(172deg, #ff6c54 1%, #ff2b59 99%);
 }
 .browser_list {
-	min-height: 720px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -155,6 +154,7 @@ body {
 	font-size: 40px;
     font-weight: 400;
     color: #fff;
+	margin-bottom: 30px;
 }
 
 .browser_text{
@@ -170,8 +170,11 @@ body {
 	margin-top: 30px;
 }
 
-.phone_list {
+.phone {
 	padding: 65px 15px;
+}
+
+.phone_list {
 	display: flex;
 	justify-content: space-between;
 }
@@ -273,7 +276,6 @@ body {
 .white_block {
 	padding: 20px;
 	background-color: white;
-	z-index: -1;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -301,7 +303,7 @@ body {
 	margin-top: 40px;
 }
 
-/* .contact {
+.contact {
 	padding: 60px 0;
 	background-image: linear-gradient(174deg, #ff6c54 1%, #ff2b59 99%);
 }
@@ -330,16 +332,75 @@ body {
 	margin-bottom: 40px;
 }
 
+.contact_form {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	line-height: 4;
+}
+
+.form_data {
+	width: 345px;
+	position: relative;
+}
+.form_message {
+	width: 770px;
+}
+
+.form_input {
+	width: 100%;
+	display: inline-block;
+	background-color: transparent;
+	padding: 0 15px;
+	line-height: 40px;
+	border: 1px solid white;
+	color: #929ba0;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.form_input::placeholder {
+	font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.form_mail {
+	padding: 0 15px 0 30px;
+	transition: padding-left .3s;
+}
+.icon {
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background: url('../images/mail_icon.png') no-repeat center center;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	transition: opacity .3s;
+}
+.form_mail:focus + .icon {
+	opacity: 0;
+}
+.form_mail:focus {
+	padding-left: 15px;
+}
+
 .contact_btn {
     padding: 20px 25px;
 	font-size: 15px;
-	line-height: 1.2;
     color: #fff;
     font-weight: 400;
     background-color: #233537;
 	margin-top: 30px;
 	align-self: flex-end;
+	display: inline-block;
 	border: 0;
 	outline: none;
-} */
-
+} 
+.contact_btn:checked,
+.contact_btn:focus {
+	box-shadow: 4px 4px 4px 2px rgba(150, 21, 44, 0.6);
+}
