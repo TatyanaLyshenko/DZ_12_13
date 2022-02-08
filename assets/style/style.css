@@ -336,11 +336,13 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	line-height: 4;
+	/* line-height: 4; */
 }
 
 .form_data {
 	width: 345px;
+	margin-bottom: 40px;
+	margin-right: 40px;
 	position: relative;
 }
 .form_message {
