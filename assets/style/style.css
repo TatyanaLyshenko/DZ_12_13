@@ -336,7 +336,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	/* line-height: 4; */
 }
 
 .form_data {
